@@ -15,10 +15,26 @@ multiplicacio(3)
 -->
 
 <script>
+    function multiplicacio() {
+        var num1 = document.getElementById('numero1').value;
+        var num2 = document.getElementById('numero2').value;
+        var producte = parseInt(num1) * parseInt(num2);
+        document.write(producte);
 
+    }
 </script>
 
 <body>
+<body>
+<form>
+    Introdueix un numero per multiplicarlo per si mateix<p>
 
+    <input id="numero1" type="text" name="numero1">
+    <br><br>
+    <input id="numero2" type="text" name="numero2">
+
+    <input type="button" value="multiplicar" onclick="multiplicacio()" />
+</form>
+</body>
 </body>
 </html>
