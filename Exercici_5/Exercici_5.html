@@ -11,10 +11,25 @@ Feu una funció anomenada inverteix que retorni una versió invertida de la llis
 -->
 
 <script>
+    // Funcio per invertir numeros introduits per array
+    function inverteix(input) {
+        var ret = new Array;
+        for(var i = input.length-1; i >= 0; i--) {
+            ret.push(input[i]);
+        }
+        return ret;
+    }
+    // Llista numeros
+    var a = [3,5,7,8]
+    // Valors invertits
+    var b = inverteix(a);
+    //Sortida per pantalla del log de la llista invertida
+    console.log(b)
+    alert(b)
 
 </script>
 
 <body>
-
+<!--Body buit-->
 </body>
 </html>
