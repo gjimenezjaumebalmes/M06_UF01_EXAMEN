@@ -19,8 +19,13 @@ multiplicacio(3)
     function multiplicacio() {
         var num1 = document.getElementById('numero1').value;
         var num2 = document.getElementById('numero2').value;
-        var producte = parseInt(num1) * parseInt(num2);
-        document.write(producte);
+
+        var resultatMulti = parseInt(num1) * parseInt(num2);
+        //El mostri en un div amb l'id resultatMulti (o per console log)
+        document.write(resultatMulti);
+
+    }
+    function multiplicacio() {
 
     }
 </script>
@@ -35,6 +40,7 @@ multiplicacio(3)
     <input id="numero2" type="text" name="numero2">
 
     <input type="button" value="multiplicar" onclick="multiplicacio()" />
+
 </form>
 </body>
 </body>
