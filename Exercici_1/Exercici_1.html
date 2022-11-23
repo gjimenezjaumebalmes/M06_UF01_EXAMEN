@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici_1</title>
+</head>
+
+<!--## Exercici 1
+Feu un botó anomenat coloret que canviï de color el botó de blanc a vermell i viceversa cada cop que el premeu. Al mateix temps, ha de cambiar el color del body al contrari. És a dir:
+
+botó: blanc -> click -> vermell -> click -> blanc
+body: vermell ->click -> blanc -> click -> vermell-->
+
+
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<!--Body amb el prefix de color inicial de color vermell-->
+<body id="divbackground" style="background-color:red;" >
+<!--Boto per canviar de color-->
+<button id="coloret" onclick="canvifons()" style="background-color:white;" >Coloret</button>
+
+
+</body>
+<script>
+
+    const btn = document.getElementById('coloret');
+
+    let index = 0;
+    /*Colors del buto*/
+    const colors = ['red', 'white']
+    /*Color invers del buto*/
+    const inverscolors = ['white', 'red'];
+
+    // Function onclick per realizar el canvi de color del buto
+    btn.addEventListener('click', function onClick() {
+        btn.style.backgroundColor = colors[index];
+        btn.style.color = 'black';
+
+        index = index >= colors.length - 1 ? 0 : index + 1;
+    });
+
+    // Funcio canvifons per canviar de color el fons
+    function canvifons(){
+        var element = document.getElementById("divbackground");
+        element.style.backgroundColor = inverscolors[index];
+    }
+
+</script>
+</html>
+
+
+
+</body>
+</html>
