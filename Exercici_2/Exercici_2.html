@@ -11,7 +11,7 @@ body: vermell ->click -> vermell -> click -> blanc ->click->blanc->click-> verme
 
 <body id="divbackground" style="background-color:red;" >
 <!--Boto per canviar de color-->
-<button id="coloret" onclick="canvifons()" style="background-color:white;" >Coloret</button>
+<button id="coloret" onclick="canvifons()" style="background-color:white;" >Coloret2</button>
 
 
 </body>
@@ -20,10 +20,10 @@ body: vermell ->click -> vermell -> click -> blanc ->click->blanc->click-> verme
     const btn = document.getElementById('coloret');
 
     let index = 0;
-    /*Colors del buto*/
-    const colors = ['red', 'white']
-    /*Color invers del buto*/
-    const inverscolors = ['white', 'red'];
+    /*botó: blanc -> click -> blanc -> click -> vermell -> click -> vermell ->  click -> blanc*/
+    const colors = ['white', 'red', 'red', 'white']
+    /*body: vermell ->click -> vermell -> click -> blanc ->click->blanc->click-> vermell-->*/
+    const inverscolors = ['red', 'white','white', 'red'];
 
     // Function onclick per realizar el canvi de color del buto
     btn.addEventListener('click', function onClick() {
