@@ -37,15 +37,17 @@ body: vermell ->click -> blanc -> click -> vermell-->
 
     // Function onclick per realizar el canvi de color del buto
     btn.addEventListener('click', function onClick() {
+        //Color del buto
         btn.style.backgroundColor = colors[index];
+        //Color de les lletres dintre del buto
         btn.style.color = 'black';
-
         index = index >= colors.length - 1 ? 0 : index + 1;
     });
 
     // Funcio canvifons per canviar de color el fons
     function canvifons(){
         var element = document.getElementById("divbackground");
+        //Color del fons del body
         element.style.backgroundColor = inverscolors[index];
     }
 
